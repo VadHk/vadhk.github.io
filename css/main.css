@@ -111,7 +111,7 @@ dialog {
   z-index: 9999;
   top: 0;
   left: 0;
-  width: 100%;
+  width: auto;
   height: 100%;
   overflow: hidden;
   background: rgba(0, 0, 0, 0.5);
@@ -336,6 +336,9 @@ dialog .modal .btn-close {
 .wrapper {
   padding: 110px 0;
   color: #000000;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 .wrapper h4 {
   text-transform: uppercase;
@@ -373,8 +376,97 @@ dialog .modal .btn-close {
     min-width: 320px;
   }
 
+  h1 {
+    font-size: 10vw;
+  }
+
   .container {
     width: auto;
+  }
+
+  .collage {
+    height: 250px;
+  }
+  .collage > div:hover .hov {
+    height: 250px;
+  }
+
+  .info {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 850px) {
+  header {
+    height: 10vh;
+  }
+
+  dialog .modal {
+    height: auto;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .nav {
+    top: 100%;
+  }
+
+  .collage {
+    height: 100vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .collage > div {
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .collage > div:hover .hov {
+    height: 25vh;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 450px) {
+  img[alt='Really?'] {
+    width: 100%;
+  }
+
+  .container {
+    padding: 0;
+  }
+
+  .title {
+    margin-top: 0vh;
+  }
+
+  .info {
+    width: 90%;
+  }
+
+  .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 50px 0;
+  }
+  .wrapper h4 {
+    margin-bottom: 0px;
+  }
+  .wrapper p {
+    text-align: center;
+  }
+  .wrapper .col {
+    margin-bottom: 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .wrapper .col:last-child {
+    margin-bottom: 0;
   }
 }
 

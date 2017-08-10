@@ -130,7 +130,7 @@ dialog{
   z-index: 9999;
   top: 0;
   left: 0;
-  width: 100%;
+  width: auto;
   height: 100%;
   overflow: hidden;
   background: rgba($black, 0.5);
@@ -323,6 +323,7 @@ dialog{
 .wrapper{
   padding: 110px 0;
   color: $black;
+  align-items: flex-start;
   h4{
     text-transform: uppercase;
     margin-bottom: 35px;
@@ -353,10 +354,6 @@ dialog{
 
 }
 
-@media screen and (max-width: 1543px){
-  
-}
-
 @media screen and (max-width: 1200px) {
   header,
   main,
@@ -364,8 +361,97 @@ dialog{
     min-width: 320px;
   }
 
+  h1{
+    font-size: 10vw;
+  }
+
   .container{
     width: auto;
   }
+
+  .collage{
+    height: 250px;
+    >div{
+      &:hover{
+        .hov{
+          height: 250px;
+        }
+      }
+    }
+  }
+
+  .info{
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 850px){
+  header{
+    height: 10vh;
+  }
+
+  dialog{
+    .modal{
+      height: auto;
+      padding: 10px;
+      width: 100%;
+    }
+  }
+
+  .nav{
+    top:100%;
+  }
+
+  .collage{
+    height: 100vh;
+    flex-direction: column;
+    >div{
+      width: 100%;
+      flex-direction: row;
+      &:hover{
+        .hov{
+          height: 25vh;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px){
+  img[alt='Really?']{
+    width: 100%;
+  }
+
+  .container{
+    padding: 0;
+  }
+
+  .title {
+    margin-top: 0vh;
+  }
+
+  .info {
+    width: 90%;
+  }
+
+  .wrapper{
+    flex-direction: column;
+    padding: 50px 0;
+    h4 {
+      margin-bottom: 0px;
+    }
+    p{
+      text-align: center;
+    }
+    .col{
+      margin-bottom: 20px;
+      align-items: center;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+
 }
 
