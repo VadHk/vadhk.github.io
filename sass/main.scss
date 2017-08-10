@@ -59,7 +59,8 @@ header{
 
 main{
   .btn-play{
-    margin: 25px;
+    //margin: 25px;
+    margin: 1vh;
   }
 }
 
@@ -236,13 +237,16 @@ dialog{
 }
 
 .title{
-  margin-top: 230px;
+  //margin-top: 230px;
+  margin-top: 10vh;
 }
 
 .info{
   width: 26%;
   line-height: 30px;
-  margin-bottom: 90px;
+  //margin-bottom: 90px;
+  margin-bottom: 10vh;
+
 }
 
 .btn-play{
