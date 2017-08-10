@@ -122,7 +122,7 @@ dialog .modal {
   border: none;
   background: #ffffff url(../img/bg-img.jpg) no-repeat left top/cover;
   height: 30%;
-  width: 30%;
+  width: 40%;
   z-index: 9999;
   top: 50%;
   left: 50%;
@@ -360,7 +360,7 @@ dialog .modal .btn-close {
   line-height: 25px;
 }
 
-@media screen and (max-width: 1680px) {
+@media screen and (max-width: 1720px) {
   .container {
     padding: 0 10px;
     min-width: 320px;
@@ -374,7 +374,7 @@ dialog .modal .btn-close {
   }
 
   .container {
-    width: 100%;
+    width: auto;
   }
 }
 

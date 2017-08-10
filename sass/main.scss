@@ -140,7 +140,7 @@ dialog{
     border: none;
     background: $white url(../img/bg-img.jpg) no-repeat left top/cover;
     height: 30%;
-    width: 30%;
+    width: 40%;
     z-index: 9999;
     top: 50%;
     left: 50%;
@@ -345,12 +345,16 @@ dialog{
 
 //------------------------@media
 
-@media screen and (max-width: 1680px) {
+@media screen and (max-width: 1720px) {
   .container{
     padding: 0 10px;
     min-width: 320px;
   }
 
+}
+
+@media screen and (max-width: 1543px){
+  
 }
 
 @media screen and (max-width: 1200px) {
@@ -361,7 +365,7 @@ dialog{
   }
 
   .container{
-    width: 100%;
+    width: auto;
   }
 }
 
