@@ -28,7 +28,7 @@
 
     var header = document.querySelector('header');
 
-    window.onscroll = scrolling();
+    window.onscroll = function() {scrolling()};
 
     function scrolling() {
         if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
