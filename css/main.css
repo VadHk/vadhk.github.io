@@ -397,7 +397,7 @@ dialog .modal .btn-close {
 }
 @media screen and (max-width: 850px) {
   header {
-    height: 15vmax;
+    height: 15vh;
   }
 
   dialog .modal {
@@ -429,12 +429,12 @@ dialog .modal .btn-close {
     width: 100%;
   }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 767px) {
   img[alt='Really?'] {
-    width: 100%;
     display: none;
   }
-
+}
+@media screen and (max-width: 450px) {
   .container {
     padding: 0;
   }

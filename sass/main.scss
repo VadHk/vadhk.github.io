@@ -387,7 +387,7 @@ dialog{
 
 @media screen and (max-width: 850px){
   header{
-    height: 15vmax;
+    height: 15vh;
   }
 
   dialog{
@@ -418,11 +418,13 @@ dialog{
   }
 }
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 767px){
   img[alt='Really?']{
-    width: 100%;
     display: none;
   }
+}
+
+@media screen and (max-width: 450px){
 
   .container{
     padding: 0;
