@@ -403,14 +403,14 @@ dialog{
   }
 
   .collage{
-    height: 100vh;
+    height: 1000px;
     flex-direction: column;
     >div{
       width: 100%;
       flex-direction: row;
       &:hover{
         .hov{
-          height: 25vh;
+          height: 250px;
           width: 100%;
         }
       }

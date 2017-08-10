@@ -411,7 +411,7 @@ dialog .modal .btn-close {
   }
 
   .collage {
-    height: 100vh;
+    height: 1000px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -425,7 +425,7 @@ dialog .modal .btn-close {
             flex-direction: row;
   }
   .collage > div:hover .hov {
-    height: 25vh;
+    height: 250px;
     width: 100%;
   }
 }
