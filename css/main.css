@@ -45,7 +45,7 @@ header.scroll {
 }
 
 main .btn-play, main .btn-close {
-  margin: 25px;
+  margin: 1vh;
 }
 
 footer {
@@ -237,13 +237,13 @@ dialog .modal .btn-close {
 }
 
 .title {
-  margin-top: 230px;
+  margin-top: 10vh;
 }
 
 .info {
   width: 26%;
   line-height: 30px;
-  margin-bottom: 90px;
+  margin-bottom: 10vh;
 }
 
 .btn-play, .btn-close {
