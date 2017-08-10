@@ -406,8 +406,16 @@ dialog .modal .btn-close {
     width: 100%;
   }
 
+  img[alt='Really?'] {
+    width: 30%;
+  }
+
   .nav {
     top: 100%;
+  }
+
+  .btn-play img, .btn-close img {
+    width: 80%;
   }
 
   .collage {

@@ -398,8 +398,18 @@ dialog{
     }
   }
 
+  img[alt='Really?']{
+    width: 30%;
+  }
+
   .nav{
     top:100%;
+  }
+
+  .btn-play{
+    img{
+      width: 80%;
+    }
   }
 
   .collage{
