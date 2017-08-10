@@ -385,6 +385,12 @@ dialog{
   }
 }
 
+@media screen and (max-width: 1024px){
+  img[alt='Really?']{
+    display: none;
+  }
+}
+
 @media screen and (max-width: 850px){
   header{
     height: 15vh;
@@ -398,17 +404,13 @@ dialog{
     }
   }
 
-  img[alt='Really?']{
-    width: 30%;
-  }
-
   .nav{
     top:100%;
   }
 
   .btn-play{
     img{
-      width: 80%;
+      width: 70%;
     }
   }
 
@@ -431,6 +433,10 @@ dialog{
 @media screen and (max-width: 767px){
   img[alt='Really?']{
     display: none;
+  }
+
+  .title {
+    margin-top: 19vh;
   }
 }
 
