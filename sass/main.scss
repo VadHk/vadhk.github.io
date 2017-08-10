@@ -1,6 +1,7 @@
 //---------------------variables
 $white: #ffffff;
 $black: #000000;
+$pink: #e38687;
 $Montserrat: 'Montserrat', sans-serif;
 $PlayFair: 'Playfair Display', serif;
 $weight-thin: 100;
@@ -201,6 +202,12 @@ dialog{
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  a{
+    transition: all 0.5s;
+    &:hover{
+      color: $pink;
+    }
+  }
 }
 
 .search{
@@ -219,6 +226,9 @@ dialog{
   width: auto;
   >a{
     margin-left: 35px;
+  }
+  img{
+    cursor: pointer;
   }
   .search-block{
     @extend .row;
@@ -334,4 +344,24 @@ dialog{
 }
 
 //------------------------@media
+
+@media screen and (max-width: 1680px) {
+  .container{
+    padding: 0 10px;
+    min-width: 320px;
+  }
+
+}
+
+@media screen and (max-width: 1200px) {
+  header,
+  main,
+  footer{
+    min-width: 320px;
+  }
+
+  .container{
+    width: 100%;
+  }
+}
 

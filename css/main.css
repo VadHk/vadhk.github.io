@@ -202,6 +202,13 @@ dialog .modal .btn-close {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
+.nav a {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.nav a:hover {
+  color: #e38687;
+}
 
 .search {
   display: none;
@@ -220,6 +227,9 @@ dialog .modal .btn-close {
 }
 .menu > a {
   margin-left: 35px;
+}
+.menu img {
+  cursor: pointer;
 }
 .menu .search-block {
   border: 2px solid rgba(255, 255, 255, 0.5);
@@ -348,6 +358,24 @@ dialog .modal .btn-close {
       -ms-flex-align: start;
           align-items: flex-start;
   line-height: 25px;
+}
+
+@media screen and (max-width: 1680px) {
+  .container {
+    padding: 0 10px;
+    min-width: 320px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  header,
+  main,
+  footer {
+    min-width: 320px;
+  }
+
+  .container {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
