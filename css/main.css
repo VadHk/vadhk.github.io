@@ -1,0 +1,354 @@
+html,
+body {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  font-family: "Montserrat", sans-serif;
+}
+
+header,
+main,
+footer {
+  display: block;
+  position: relative;
+  width: 100%;
+  background: transparent;
+  color: #ffffff;
+  min-width: 1200px;
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 9999;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  height: 190px;
+  min-height: 60px !important;
+  border-bottom: solid 2px rgba(255, 255, 255, 0.1);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+header .row, header .nav, header .menu, header .menu .search-block, .menu header .search-block {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+header.scroll {
+  height: 60px;
+}
+
+main .btn-play, main .btn-close {
+  margin: 25px;
+}
+
+footer {
+  background: #000000;
+  padding: 35px 0;
+}
+footer i {
+  font-weight: 100;
+  font-size: 12px;
+}
+
+a {
+  outline: none;
+  color: #ffffff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+input,
+button {
+  outline: none;
+}
+
+a,
+input,
+span,
+div,
+p {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Playfair Display", serif;
+  margin: 0;
+}
+
+h1 {
+  font-size: 140px;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+p {
+  font-weight: 300;
+  margin: 0;
+}
+
+dialog {
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.5);
+}
+dialog .modal {
+  position: absolute;
+  display: block;
+  border: none;
+  background: #ffffff url(../img/bg-img.jpg) no-repeat left top/cover;
+  height: 30%;
+  width: 30%;
+  z-index: 9999;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 30px;
+  color: #ffffff;
+}
+dialog .modal h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  margin-bottom: 30px;
+}
+dialog .modal p {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 30px;
+  font-size: 25px;
+}
+dialog .modal .btn-close {
+  float: right;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1720px;
+  min-width: 1200px;
+  height: 100%;
+}
+
+.row, .nav, .menu, .menu .search-block {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.col {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.nav {
+  width: 280px;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.search {
+  display: none;
+  background: none;
+  color: #ffffff;
+  border: none;
+  margin-left: 3px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  width: 100%;
+}
+
+.menu {
+  height: auto;
+  width: auto;
+}
+.menu > a {
+  margin-left: 35px;
+}
+.menu .search-block {
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  padding: 3px;
+}
+.menu .search-block .search {
+  display: block;
+}
+
+.poster {
+  background: #ffffff url("../img/bg-img.jpg") no-repeat left top/cover;
+  width: 100%;
+  height: 100vh;
+  padding-top: 190px;
+}
+
+.title {
+  margin-top: 230px;
+}
+
+.info {
+  width: 26%;
+  line-height: 30px;
+  margin-bottom: 90px;
+}
+
+.btn-play, .btn-close {
+  border: none;
+  background: none;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+.btn-play:hover, .btn-close:hover {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.btn-close {
+  font-size: 50px;
+  color: #ffffff;
+}
+
+.collage {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: 500px;
+}
+.collage > div {
+  width: 25%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+.collage > div:hover > img {
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.collage > div:hover .hov {
+  background: rgba(0, 0, 0, 0.3);
+  width: 25%;
+  height: 500px;
+  z-index: 9997;
+  position: absolute;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+.collage > div img {
+  width: 100%;
+  height: 100%;
+}
+.collage > div > div {
+  position: absolute;
+  z-index: 9998;
+  -webkit-transform: translateY(200%);
+          transform: translateY(200%);
+}
+.collage > div > div h3 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+.collage > div > div i {
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.wrapper {
+  padding: 110px 0;
+  color: #000000;
+}
+.wrapper h4 {
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+.wrapper a,
+.wrapper p {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: italic;
+  text-transform: capitalize;
+  font-family: "Playfair Display", serif;
+}
+.wrapper .col {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  line-height: 25px;
+}
+
+/*# sourceMappingURL=main.css.map */

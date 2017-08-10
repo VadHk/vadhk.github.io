@@ -1,0 +1,333 @@
+//---------------------variables
+$white: #ffffff;
+$black: #000000;
+$Montserrat: 'Montserrat', sans-serif;
+$PlayFair: 'Playfair Display', serif;
+$weight-thin: 100;
+$weight-extra-light: 200;
+$weight-light: 300;
+$weight-regular: 400;
+$weight-medium: 500;
+$weight-semi-bold: 600;
+$weight-bold: 700;
+$weight-extra-bold: 800;
+$weight-black: 900;
+
+//---------------------selectors
+html,
+body{
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  background: $white;
+  font-family: $Montserrat;
+}
+
+header,
+main,
+footer{
+  display: block;
+  position: relative;
+  width: 100%;
+  background: transparent;
+  color: $white;
+  min-width: 1200px;
+}
+
+header{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 9999;
+  font-weight: $weight-bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  height: 190px;
+  min-height: 60px!important;
+  border-bottom: solid 2px rgba($white, 0.1);
+  transition: all 1s;
+  .row{
+    justify-content: space-between;
+  }
+  &.scroll{
+    height: 60px;
+  }
+}
+
+main{
+  .btn-play{
+    margin: 25px;
+  }
+}
+
+footer{
+  background: $black;
+  padding: 35px 0;
+  i{
+    font-weight: $weight-thin;
+    font-size: 12px;
+  }
+}
+
+a{
+  outline: none;
+  color: $white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+input,
+button{
+  outline: none;
+}
+
+a,
+input,
+span,
+div,
+p
+{
+  font-family: $Montserrat;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5{
+  font-family: $PlayFair;
+  margin: 0;
+}
+
+h1{
+  font-size: 140px;
+  font-weight: $weight-regular;
+}
+
+h3{
+  font-size: 18px;
+  font-weight: $weight-semi-bold;
+}
+
+h4{
+  font-size: 14px;
+  font-weight: $weight-bold;
+}
+
+p{
+  font-weight: $weight-light;
+  margin: 0;
+}
+
+dialog{
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: rgba($black, 0.5);
+  .modal{
+    position: absolute;
+    display: block;
+    border: none;
+    background: $white url(../img/bg-img.jpg) no-repeat left top/cover;
+    height: 30%;
+    width: 30%;
+    z-index: 9999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    color: $white;
+    h1{
+      font-family: $Montserrat;
+      font-weight: $weight-black;
+      margin-bottom: 30px;
+    }
+    p{
+      font-family: $PlayFair;
+      font-weight: $weight-regular;
+      font-style: italic;
+      line-height: 30px;
+      font-size: 25px;
+    }
+    .btn-close{
+      float: right;
+    }
+  }
+}
+
+//-----------------------classes
+.container{
+  margin: 0 auto;
+  max-width: 1720px;
+  min-width: 1200px;
+  height: 100%;
+}
+
+.row{
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.col{
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.nav{
+  @extend .row;
+  width: 280px;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.search{
+  display: none;
+  background: none;
+  color: $white;
+  border: none;
+  margin-left: 3px;
+  transition: all 1s;
+  width: 100%;
+}
+
+.menu{
+  @extend .row;
+  height: auto;
+  width: auto;
+  >a{
+    margin-left: 35px;
+  }
+  .search-block{
+    @extend .row;
+    border: 2px solid rgba($white, 0.5);
+    padding: 3px;
+    .search{
+      display: block;
+    }
+  }
+}
+
+.poster{
+  background: $white url("../img/bg-img.jpg") no-repeat left top/cover;
+  width: 100%;
+  height: 100vh;
+  padding-top: 190px;
+}
+
+.title{
+  margin-top: 230px;
+}
+
+.info{
+  width: 26%;
+  line-height: 30px;
+  margin-bottom: 90px;
+}
+
+.btn-play{
+  border: none;
+  background: none;
+  transition: all 1s;
+  &:hover{
+    transform: rotate(90deg);
+  }
+}
+
+.btn-close{
+  @extend .btn-play;
+  font-size: 50px;
+  color: $white;
+}
+
+.collage{
+  display: inline-flex;
+  flex-direction: row;
+  width: 100%;
+  height: 500px;
+  >div{
+    width: 25%;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    &:hover{
+      >img{
+        transition: all 1s ease-out;
+        transform: scale(1.1);
+      }
+      .hov{
+        background: rgba(0, 0, 0, 0.3);
+        width: 25%;
+        height: 500px;
+        z-index: 9997;
+        position: absolute;
+        transform: translate(0,0);
+      }
+    }
+    img{
+      width: 100%;
+      height: 100%;
+    }
+    >div{
+      position: absolute;
+      z-index: 9998;
+      transform: translateY(200%);
+      h3{
+        font-family: $Montserrat;
+        text-transform: uppercase;
+      }
+      i{
+        font-size: 18px;
+        font-weight: $weight-thin;
+      }
+    }
+  }
+}
+
+.wrapper{
+  padding: 110px 0;
+  color: $black;
+  h4{
+    text-transform: uppercase;
+    margin-bottom: 35px;
+  }
+  a,
+  p{
+    color: $black;
+    font-size: 14px;
+    font-weight: $weight-regular;
+    font-style: italic;
+    text-transform: capitalize;
+    font-family: $PlayFair;
+  }
+  .col{
+    justify-content: flex-start;
+    align-items: flex-start;
+    line-height: 25px;
+  }
+}
+
+//------------------------@media
+
