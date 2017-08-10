@@ -37,13 +37,10 @@
 
     var play = document.querySelector('.btn-play');
     var collage = document.querySelector('.collage')
-
     function runScroll() {
         scrollTo(document.body, collage.offsetTop, 600);
     }
-
     play.addEventListener("click",runScroll,false)
-
     function scrollTo(element, to, duration) {
         if (duration <= 0) return;
         var difference = to - element.scrollTop;
